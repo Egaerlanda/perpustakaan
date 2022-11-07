@@ -10,8 +10,8 @@ class BahasaSeeder extends Seeder
     public function run()
     {
         $id = (new BahasaModel())->insert([
-            'kode'  => 'id',
-            'nama'  => 'Indonesia',
+            'kode'  =>'id',
+            'nama'  =>'Indonesia',
         ]);
         echo "hasil id = $id";
     }

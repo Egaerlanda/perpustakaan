@@ -10,7 +10,7 @@ class KategoriSeeder extends Seeder
     public function run()
     {
         $id = (new KategoriModel())->insert([
-            'nama'  => 'Kamus',
+            'nama'  =>'Kamus',
         ]);
         echo "hasil id = $id";
     }
