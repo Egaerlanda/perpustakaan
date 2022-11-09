@@ -9,7 +9,7 @@ class AnggotaSeeder extends Seeder
 {
     public function run()
     {
-        $id = (new AnggotaModel())->insert([
+        $r = (new AnggotaModel())->insert([
             'nama_depan'    =>'Muhammad Rievaldi',
             'nama_belakang' =>'Rendyansyah Putra',
             'email'         =>'mrievaldrp6@gmail.com',
@@ -24,6 +24,6 @@ class AnggotaSeeder extends Seeder
             'berlaku_akhir' =>'20 Oktober 2023',
 
         ]);
-        echo"hasil id =$id";
+        echo"hasil id =$r";
     }
 }

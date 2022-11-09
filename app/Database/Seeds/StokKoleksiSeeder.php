@@ -9,13 +9,13 @@ class StokKoleksiSeeder extends Seeder
 {
     public function run()
     {
-        $id = (new StokKoleksiModel())->insert([
-            'tgl_awal'      =>'',
-            'tgl_akhir'     =>'',
-            'koleksi_id'    =>'',
-            'anggota_id'    =>'',
-            'status_pesan'  =>'',
+        $r = (int)(new StokKoleksiModel())->insert([
+            'koleksi_id'        => '10',
+            'nomor'             => '10',
+            'status_tersedia'   => 'A',
+            'anggota_id'       => 1,
+            'pustakawan_id'    => 1,
         ]);
-        echo"hasil id =$id";
+        echo "hasil insert $r";
     }
 }
